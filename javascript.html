@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navMenu">
+        <a href="./index.html"> HTML </a>
+
+      <a href="./index.html"> CSS </a>
+        
+    <a href="./javascript.html"> Javascript </a>
+    <a href="./git.html"> GIT </a>
+
+</nav>
+    <h1>Les choses serieuses commencent... Le javascript !</h1>
+
+    <div id="html1">
+    <h2 id="html">Javascript</h2>
+<table class="tableau1" id="tableau1">
+<h3>Les bases</h3>
+<!--Header du tableau-->
+<thead>
+<tr>
+    <th>Code</th><th>exemples...</th><th>Utilité</th>
+    </tr>
+</thead>   
+<!--Contenu du tableau-->
+<tbody>
+    <!--LIGNE 1-->
+    <tr>
+        <td> console.log() </td> <td colspan="2"> pour imprimer / enregistrer un message js</td> 
+    </tr>
+    <!--LIGNE 2-->
+    <tr>
+        <td> // </td> <td colspan="2"> commentaires sur une seule ligne</td> 
+    </tr>
+    <!--LIGNE 3-->
+    <tr>
+        <td> /* */ </td> <td colspan="2"> commentaires sur plusieurs lignes</td>
+    </tr>
+    <!--LIGNE 4-->
+    <tr>
+        <td> + _ / % * </td> <td colspan="2">permettent de faire des cacluls</td>
+    </tr>
+    <!--LIGNE 5-->
+    <tr>
+        <td> let / const </td> <td> const test1= 'lorem ipsum' </td> <td> permet de déclarer une variable</td>
+    </tr>
+    <!--LIGNE 6-->
+    <tr>
+        <td class="dot"> math.floor() </td> <td> console.log (`The temperature is ${Math.floor(fahrenheit)} degrees Fahrenheit.`)	</td> <td>permet d'integrer un calcul dans une phrase</td>
+    </tr>
+    <!--LIGNE 7-->
+    <tr>
+        <td class="dot"> If / Else / else if  </td> <td> if (false) { <br>
+            console.log('The code in this block will not run.'); <br>
+          } else { <br>
+            console.log('But the code in this block will!'); <br>
+          } <br>
+        </td> 
+           <td>  permet de créer des conditions simples</td>
+    </tr>
+
+    <!--LIGNE 8-->
+    <tr>
+        <td class="dot"> Comparaison operator</td> 
+        <td>Less than: < <br>
+            Greater than: > <br>
+            Less than or equal to: <= <br>
+            Greater than or equal to: >= <br>
+            Is equal to: === <br>
+            Is not equal to: !==</td>
+           <td>  permet de créer des comparaisons simples</td>
+    </tr>
+
+    <!--LIGNE 9-->
+    <tr>
+        <td class="dot"> && et || et !</td> 
+        <td>peremet d'ajouter une condition : avec le <br> 'et =&&' <br> '||'' = ou <br> '!' = n'est pas
+        </td>
+           <td>  permet de créer des comparaisons simples</td>
+    </tr>
+
+    <!--LIGNE 10-->
+    <tr>
+        <td class="dot"> Truthy and False</td> 
+        <td>0 <br>
+            Empty strings like "" or '' <br>
+            null which represent when there is no value at all <br>
+            undefined which represent when a declared variable lacks a value <br>
+            NaN, or Not a Number</td>
+           <td>  applique une valeur nul</td>
+    </tr>
+    <tr>
+        <td> ? et : </td>
+        <td>condition ? firstExpression : secondExpression </td>
+        <td> alternative à if ... else </td>
+    </tr>
+</tbody>
+
+
+<!--footer du tableau-->
+<tfoot>
+
+</tfoot>
+</table>
+<!--2nd tableau-->
+  <table>  
+<h3>Les iterateurs</h3>
+<!--Header du tableau-->
+<thead>
+<tr>
+    <th>Code</th><th>exemples...</th><th>Utilité</th>
+    </tr>
+</thead>   
+<!--Contenu du tableau-->
+<tbody>
+    <!--LIGNE 1-->
+    <tr>
+        <td> forEach() </td> <td colspan="2"> est utilisé pour exécuter le même code sur chaque élément d'un tableau mais ne modifie pas le tableau et renvoie undefined.</td> 
+    </tr>
+    <!--LIGNE 2-->
+    <tr>
+        <td> map() </td> <td colspan="2"> exécute le même code sur chaque élément d'un tableau et renvoie un nouveau tableau avec les éléments mis à jour. </td> 
+    </tr>
+    <!--LIGNE 3-->
+    <tr>
+        <td> filter() </td> <td colspan="2"> vérifie chaque élément d'un tableau pour voir s'il répond à certains critères et renvoie un nouveau tableau avec les éléments qui renvoient la vérité pour les critères.</td>
+    </tr>
+    <!--LIGNE 4-->
+    <tr>
+        <td> findIndex()</td> <td colspan="2">renvoie l'indice du premier élément d'un tableau qui satisfait une condition dans la fonction de rappel. Il retourne -1si aucun des éléments du tableau ne satisfait la condition.</td>
+    </tr>
+        <!--LIGNE 4-->
+    <tr>
+        <td> reduce()</td> <td colspan="2">.reduce()parcourt un tableau et prend les valeurs des éléments et renvoie une seule valeur.</td>
+    </tr>
+        <!--LIGNE 4-->
+        <tr>
+            <td> some()</td> <td colspan="2"></td>
+        </tr>
+        <!--LIGNE 4-->
+        <tr>
+            <td> every()</td> <td colspan="2"></td>
+        </tr>   
+        <!--LIGNE 4-->
+        <tr>
+            <td> split()</td> <td colspan="2">divise le tableau</td>
+        </tr>   
+        <!--LIGNE 4-->
+        <tr>
+            <td> join()</td> <td colspan="2">affiche ensemble les elements du tableau</td>
+        </tr>   
+    
+    <!--LIGNE 4-->
+       <tr>
+        <td> d'autres méthodes</td> <td colspan="2"><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods' target="blank" >voir ici</a></td>
+    </tr>
+</tbody>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css / html</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./transition.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="transition transition-1 is-active"></div>
+ <nav class="navMenu">
+            <a href="#html"> HTML </a>
+                <a href="#tableau1" id="petit">Tableau</a>
+                <a href="#tableau2"  id="petit">Éléments</a>
+          <a href="#css"> CSS </a>
+                <a href="#tableau3"  id="petit">Linkstates</a>
+                <a href="#tableau4"  id="petit">Box-model</a>
+                <a href="#tableau5"  id="petit">Flex</a>
+        <a href="./javascript.html"> Javascript </a>
+        <a href="./git.html"> GIT </a>
+
+  </nav>
+        <h1>Flijt ! Quelques mémos css/html pour ne rien oublier !</h1>
+
+        <div id="html1">
+        <h2 id="html">html</h2>
+<table class="tableau1" id="tableau1">
+    <h3>TABLEAU</h3>
+    <!--Header du tableau-->
+   <thead>
+    <tr>
+        <th>Code html</th><th>Nom</th><th>Utilité</th>
+        </tr>
+    </thead>   
+    <!--Contenu du tableau-->
+    <tbody>
+        <!--LIGNE 1-->
+        <tr>
+            <td> thead </td> <td> Table Head Element</td> <td> Définis le header du tableau</td>
+        </tr>
+        <!--LIGNE 2-->
+        <tr>
+            <td> tbody </td> <td> Table body Element</td> <td> Définis le contenu du tableau</td>
+        </tr>
+        <!--LIGNE 3-->
+        <tr>
+            <td> tr </td> <td> Table Row Element</td> <td> Définis une nouvelle ligne du tableau</td>
+        </tr>
+        <!--LIGNE 4-->
+        <tr>
+            <td> th </td> <td> Table Heading Element</td> <td> Définis le une colonne header du tableau</td>
+        </tr>
+        <!--LIGNE 5-->
+        <tr>
+            <td> td </td> <td> Table Data Element</td> <td> Définis la valeur d'une colonne du tableau</td>
+        </tr>
+        <!--LIGNE 6-->
+        <tr>
+            <td class="dot"> colspan </td> <td> Column Span	</td> <td> Définis le nombre de colonne</td>
+        </tr>
+        <!--LIGNE 7-->
+        <tr>
+            <td class="dot"> rowspan </td> <td> Row Span</td> <td> Définis le ombre de ligne qu'il prend</td>
+        </tr>
+    </tbody>
+
+    
+    <!--footer du tableau-->
+    <tfoot>
+
+    </tfoot>
+</table>
+        
+<table class="tableau2" id="tableau2">
+    <h3>éléments</h3>
+    <!--Header du tableau-->
+   <thead>
+    <tr>
+        <th>Code html</th><th>Nom</th><th>Utilité</th>
+        </tr>
+    </thead>   
+    <!--Contenu du tableau-->
+    <tbody>
+        <!--LIGNE 1-->
+        <tr>
+            <td class="dot"> ol </td> <td>order list item </td> <td> liste numéroté</td>
+        </tr>
+        <!--LIGNE 2-->
+        <tr>
+            <td class="dot"> ul </td> <td> list item</td> <td> liste avec des points</td>
+        </tr>
+        <!--LIGNE 3-->
+        <tr class="separation">
+            <td class="dot"> li </td> <td>list item element</td> <td> element d'une liste</td>
+        </tr>
+        <!--LIGNE 4-->
+        <tr>
+            <td> H1-H6 </td> <td> Title</td> <td> Titre</td>
+        </tr>
+        <!--LIGNE 5-->
+        <tr>
+            <td> p </td> <td> parapgraphe</td> <td> contenu texte</td>
+        </tr>
+        <!--LIGNE 6-->
+        <tr>
+            <td> img </td> <td> image	</td> <td> insérer une image</td>
+        </tr>
+        <!--LIGNE 7-->
+        <tr>
+            <td> video </td> <td> video</td> <td>insérer une vidéo</td>
+        </tr>
+        <!--LIGNE 8-->
+        <tr>
+            <td class="dot"> div </td> <td> div element</td> <td> créer un conteneur</td>
+        </tr>
+        <!--LIGNE 9-->
+        <tr>
+            <td class="dot"> span </td> <td> span element</td> <td> conteneur opti pour le texte</td>
+        </tr>
+        <!--LIGNE 10-->
+        <tr>
+            <td class="dot"> br </td> <td>line break</td> <td> retour à la ligne</td>
+        </tr>
+        <!--LIGNE 11-->
+        <tr>
+            <td class="dot"> title </td> <td> video</td> <td>insérer une vidéo</td>
+        </tr>
+    </tbody>
+
+    
+    <!--footer du tableau-->
+    <tfoot>
+
+    </tfoot>
+</table>
+
+</div>
+
+        <div id="css1">
+            <h2 id="css">CSS</h2>
+
+       
+            <table class="tableau3" id="tableau3">
+                <h3>Link states</h3>
+                <!--Header du tableau-->
+               <thead>
+                <tr>
+                    <th>Code html</th><th>Utilité</th>
+                    </tr>
+                </thead>   
+                <!--Contenu du tableau-->
+                <tbody>
+                    <!--LIGNE 1-->
+                    <tr>
+                        <td class="dot"> :active </td>  <td> au moment ou l'on appuie sur le lien</td>
+                    </tr>
+                    <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot"> :link </td>  <td>lien classique non visité</td>
+                    </tr>
+                    <!--LIGNE 3-->
+                    <tr>
+                        <td class="dot"> :visited </td>  <td> lorsque le lien a déjà été visité</td>
+                    </tr>
+                    <!--LIGNE 4-->
+                    <tr>
+                        <td class="dot"> :hover </td>  <td> au survol du lien</td>
+                    </tr>
+
+                </tbody>
+            
+                
+                <!--footer du tableau-->
+                <tfoot>
+            
+                </tfoot>
+            </table>
+
+        </div>
+
+        <div id="css1">
+            <table class="tableau4" id="tableau4">
+                <h3>Box Model</h3>
+                <!--Header du tableau-->
+               <thead>
+                <tr>
+                    <th>Code html</th><th colspan="4">Utilité</th><th>Utilité</th>
+                    </tr>
+                </thead>   
+                <!--Contenu du tableau-->
+                <tbody>
+                    <!--LIGNE 1-->
+                    <tr>
+                        <td class="dot"> Margin </td>  <td> 10px ⬆️ 10px ➡️ 10px ⬇️ 10px ⬅️ </td> <td colspan="3"> auto </td><td> permet de mofifier l'espace à l'exterieur de la boite </td>
+                    </tr>
+                    <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot"> Box-sizing </td>  <td>border-box</td><td colspan="3">content-box</td><td>border-box permet de contenir les bordures <br> et ou du remplissage dans la taille de la boite</td>
+                    </tr>
+                    <!--LIGNE 3-->
+                    <tr>
+                        <td class="dot"> visibility </td>  <td> hidden</td><td> visible</td><td colspan="2"> collapse</td><td> permet de gérer le visibilité d'un élément, par default visibility <br>hidden supprime l'object mais garde un ipact sur la disposition</td>
+                    </tr>
+                    <!--LIGNE 4-->
+                    <tr>
+                        <td class="dot">overflow </td>  <td> hidden</td><td> visible</td><td> scroll</td><td> auto</td><td> gere la taille du contenu</td>
+                    </tr>
+
+                </tbody>
+            
+                
+                <!--footer du tableau-->
+                <tfoot>
+            
+                </tfoot>
+            </table>
+
+            <table class="tableau5" id="tableau5">
+                <h3>Flex box</h3>
+                <!--Header du tableau-->
+               <thead>
+                <tr>
+                    <th>Code </th><th colspan="5">complémént</th><th>Utilité</th>
+                    </tr>
+                </thead>   
+                <!--Contenu du tableau-->
+                <tbody>
+                                        <!--LIGNE 0-->
+                    <tr>
+                        <td>Display </td>  <td colspan="2"> Display : flex </td><td colspan="3"> Display : inline-flex </td><td> Permet de mettre un element en etat "flex"</td>
+                    </tr>
+                    <!--LIGNE 1-->
+                    <tr>
+                        <td class="dot"> Justify-Content </td>  <td> Flex-end </td> <td> Flex-start </td><td> Center </td><td>Space-arround</td><td>Space-between</td><td>permet de dire comment les éléments se répartissent horizontalement</td>
+                    </tr>
+                    <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot"> Align-Items </td>  <td>Baseline</td><td>Flex-start</td><td>flex-end</td><td>Center</td><td>stretch</td><td> Comme l'élément d'en haut mais verticalement</td>
+                    </tr>
+                    <!--LIGNE 3-->
+                    <tr>
+                        <td> Flex-Grow </td>  <td colspan="5"> flex-grow : 1 </td><td>Indique comment un element va réagir si il grossit <br> un nombre supérieur grandira plus qu'un numéro inferieur</td>
+                    </tr>
+                    <!--LIGNE 4-->
+                    <tr>
+                        <td>Flex-Shrink </td>  <td colspan="5"> flex-shrink : 1 </td><td>Indique comment un element va réagir si il diminue <br> un nombre supérieur diminura plus qu'un numéro inferieur</td>
+                    </tr>
+                    <!--LIGNE 5-->
+                    <tr>
+                        <td>Flex-Basis </td>  <td colspan="5"> flex-basis : 100px </td><td> Définis la largeur du contenu avant <br> retressissement ou agrandissement</td>
+                    </tr>
+                </tbody>
+                    <!--LIGNE 6-->
+                    <tr>
+                        <td>Flex </td>  <td colspan="2"> Flex : <em>2</em>  <strong>1</strong> 100px </td><td colspan="3"> <em>[flex-grow]</em> <strong>[flex-shrink]</strong> [flex-basis] </td><td> réuni 3 css en un pour faciliter le code </td>
+                    </tr>
+                    <!--LIGNE 7-->
+                    <tr>
+                        <td>Flex-wrap </td>  <td> wrap</td><td> wrap-reverse</td><td colspan="3"> nowrap</td><td> wrap : les éléments enfants qui ne tiennent pas descendront <br> wrap-reverse : pareil que wrap mais inverse le sens <br> nowrap : est la valeur par default</td>
+                    </tr>
+                    <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot"> Align Content </td>  <td>flex-start <br> flex-end </td><td colspan="2">Space-arround <br> Space-between </td><td>stretch </td><td>Center</td> <td>Définis comment l'alignement des contenus va se répartire dans la boite </td>
+                    </tr>
+                    <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot"> Flex-direction </td>  <td>column</td><td>column-reverse</td><td>row</td><td colspan="2">row-reverse</td><td>comment vont être répartis les différents éléments</td>
+                    </tr>
+                    <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot"> Flex-flow </td>  <td colspan="5">[Flex-wrap] + [Flex-direction]</td><td>Tout comme "flex" ici c'est un racourci <br> qui contient à la fois flex-wrap et flex-direction</td>
+                    </tr>
+                <!--footer du tableau-->
+                <tfoot>
+            
+                </tfoot>
+            </table>
+
+
+            <table class="tableau6" id="tableau6">
+                <h3>Grids</h3>
+                <!--Header du tableau-->
+               <thead>
+                <tr>
+                    <th>Code</th><th colspan="5">complément</th><th>Utilité</th>
+                    </tr>
+                </thead>   
+                <!--Contenu du tableau-->
+                <tbody>
+                  <!--LIGNE 0-->
+                    <tr>
+                        <td>Grid-template-columns </td> <td colspan="5">100px 200px / 10% 20%...  </td><td>Définis le nombre de colonnes  et leurs tailles</td>
+                    </tr>
+                 <!--LIGNE 1-->
+                    <tr>
+                        <td>grid-template-rows </td>  <td colspan="5">100px 200px / 10% 20%...  </td><td>Définis le nombre de lignes et leurs tailles</td>
+                    </tr>
+                 <!--LIGNE 2-->
+                    <tr>
+                        <td class="dot">grid-template </td>  <td colspan="5">100px 20% 1fr / 2fr 35% 100px </td><td>remplace les 2 précédentes propriétés dans l'ordre row / colonne </td>
+                    </tr>
+                  <!--LIGNE 3-->
+                     <tr>
+                         <td>grid-template-area </td>  <td></td> <td></td>
+                    </tr>
+                  <!--LIGNE 4-->
+                    <tr>
+                       <td class="dot">row-gap / column-gap / gap </td>  <td colspan="5">gap : [rox-gap] [column-gap] </td><td>Définis l'espace entre les lignes et colonnes. Gap réuni colonnes et lignes</td>
+                   </tr>
+                <!--LIGNE 5-->
+                   <tr>
+                         <td>grid-row-start / grid-row-end </td>  <td colspan="5">grid-rox-start: 3 <br>grid-row-end: 5</td><td>ici l'élément occupera la ligne 3 à 5</td>
+                   </tr>
+                  <!--LIGNE 6-->
+                  <tr>
+                    <td>grid-column-start / grid-column-end </td>  <td colspan="5">grid-column-start: 3 <br>grid-column-end: 5</td><td>ici l'élément occupera la colonne 3 à 5 <br> SPAN permet d'indiquer le nombre de colonne qu'il prend : grid-column: 4 / span 2;</td>
+                </tr>
+                             <!--LIGNE 7-->
+                <tr>
+                      <td class="dot">grid-row / grid-column </td>  <td colspan="5">grid-row: 4 / 6 ;</td><td>remplace start et end en même temps</td>
+                </tr>
+             <!--LIGNE 7-->
+                <tr>
+                      <td>grid-area </td> <td colspan="5"></td><td>il va interpréter les 4 valeur dans cet ordre : grid-row-start <br> grid-column-start <br> grid-row-end <br>   grid-column-end</td>
+                </tr>
+             <!--LIGNE 8-->
+             <tr>
+                <td>Display </td> <td  colspan="5">Grid </td><td>met la section en etat grid</td>
+          </tr>
+                       <!--LIGNE 8-->
+             <tr>
+                <td>repeat </td> <td  colspan="5">Grid-template-columns: repeat(3, 100px); </td><td>peremet de répéter facilement un nombre de colonnes / lignes</td>
+          </tr>
+                 <!--LIGNE 9-->
+                <tr>
+                 <td>minmax() </td> <td  colspan="5">minmax(100px, 300px) </td><td>la colonne ou la ligne sera comprise entre 100 et 300px</td>
+          </tr>
+                           
+          <!--footer du tableau-->               
+           <tfoot>
+            
+                </tfoot>
+
+                <table class="tableau7" id="tableau7">
+                    <h3>Grids advanced</h3>
+                    <!--Header du tableau-->
+                   <thead>
+                    <tr>
+                        <th>Code</th><th colspan="5">complément</th><th>Utilité</th>
+                        </tr>
+                    </thead>   
+                    <!--Contenu du tableau-->
+                    <tbody>
+                      <!--LIGNE 0-->
+                        <tr>
+                            <td>grid-template-areas</td> <td colspan="5">  </td><td>compliqué voir cours....</td>
+                        </tr>
+                     <!--LIGNE 1-->
+                        <tr>
+                            <td>justify-items</td>  <td colspan="5">Start  /  end / center / Stretch </td><td>place horizontalement </td>
+                        </tr>
+                     <!--LIGNE 2-->
+                        <tr>
+                            <td>justify-contents </td>  <td colspan="5"> Start  /  end / center / Stretch</td><td>same mais dans les lignes </td>
+                        </tr>
+                      <!--LIGNE 3-->
+                         <tr>
+                             <td>justify-self</td>  <td colspan="5">start / end / center / stretch</td> <td>spécifie comment individuellement se positionner sur l'axe des lignes</td>
+                        </tr>
+                      <!--LIGNE 4-->
+                        <tr>
+                           <td>align-items </td>  <td colspan="5">Start  /  end / center / Stretch </td><td></td>
+                       </tr>
+                    <!--LIGNE 5-->
+                       <tr>
+                             <td>align-content </td>  <td colspan="5">Start  /  end / center / Stretch / space-between / space-around / space-evenly </td><td>place tout le long de l'axe des colonnes</td>
+                       </tr>
+                      <!--LIGNE 6-->
+                      <tr>
+                        <td>align-self</td>  <td colspan="5"> start / end / center / stretch </td><td>spécifie comment individuellement se positionner sur l'axe des colonnes</td>
+                    </tr>
+                                 <!--LIGNE 7-->
+                    <tr>
+                          <td>grid-auto-rows </td>  <td colspan="5">grid-auto-rows: 100px; </td><td>aujoute automatiquement des lignes</td>
+                    </tr>
+                 <!--LIGNE 7-->
+                    <tr>
+                          <td>grid-auto-columns </td> <td colspan="5"> grid-auto-colomns: 100px; </td><td>aujoute automatiquement des colonnes</td>
+                    </tr>
+                 <!--LIGNE 8-->
+                 <tr>
+                    <td>grid-auto-flow </td> <td  colspan="5">row / columns / dense </td><td> indique pour haque nouveau element comment il va apparaitre</td>
+              </tr>
+                           <!--LIGNE 8-->
+                 <tr>
+                    <td> </td> <td  colspan="5">Grid-template-columns: repeat(3, 100px); </td><td>peremet de répéter facilement un nombre de colonnes / lignes</td>
+              </tr>
+                     <!--LIGNE 9-->
+                    <tr>
+                     <td> </td> <td  colspan="5">minmax(100px, 300px) </td><td>la colonne ou la ligne sera comprise entre 100 et 300px</td>
+              </tr>
+                               
+              <!--footer du tableau-->               
+               <tfoot>
+                
+                    </tfoot>
+            </table>
+
+
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
